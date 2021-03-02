@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:drawableStart="@android:drawable/ic_media_pause" />
+
+        <TextView
+            android:id="@+id/lblScore"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:text="Score: 300"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@+id/lblScore"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/eater"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/eater" />
+
+        <ImageView
+            android:id="@+id/firstMouse"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/cookie_1"/>
+
+        <ImageView
+            android:id="@+id/secondMouse"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/cookie_2"/>
+
+        <ImageView
+            android:id="@+id/thirdMouse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cookie_3"/>
+
+        <ImageView
+            android:id="@+id/fourthMouse"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/cookie_4"/>
+
+        <ImageView
+            android:id="@+id/poisonedMouse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rock"/>
+
+    </FrameLayout>
+</LinearLayout>

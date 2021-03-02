@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".StarterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRateUs"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button_background"
+                android:drawableStart="@android:drawable/btn_star_big_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/button_background"
+                android:drawableStart="@android:drawable/ic_menu_preferences" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Cookie Catcher"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TableRow android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cookie_1"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Small Cookie (5 Points)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cookie_2"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Medium Cookie (10 Points)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/cookie_3"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Large Cookie (15 Points)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cookie_4"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Huge Cookie (20 Points)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/rock"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Rock (Game Over)"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:drawableEnd="@android:drawable/star_on"
+            android:drawableStart="@android:drawable/star_on"
+            android:text="        PLAY        "/>
+    </LinearLayout>
+
+</LinearLayout>
